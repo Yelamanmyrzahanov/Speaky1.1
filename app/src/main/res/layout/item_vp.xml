@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+    <TextView
+        android:id="@+id/textViewSpeaky"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="Speaky"
+        android:textColor="@color/bluebutton"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/easyCircleImageView"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/textViewSpeaky"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        app:border_color="@color/textColor"
+        app:border_width="3dp"
+        android:src="@drawable/monster128"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/tv_easyTwister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/easyCircleImageView"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="Easy Twister"
+        android:textColor="@color/textViewColors"
+        android:textSize="13sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/mediumCircleImageView"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="28dp"
+        android:src="@drawable/womanmouth"
+        app:border_color="@color/textColor"
+        android:layout_below="@id/easyCircleImageView"
+        android:layout_marginTop="20dp"
+        app:border_width="3dp"/>
+
+    <TextView
+        android:id="@+id/tv_mediumTwister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:fontFamily="serif"
+        android:layout_marginLeft="35dp"
+        android:gravity="center"
+        android:text="Medium Twister"
+        android:textColor="@color/textViewColors"
+        android:textSize="13sp"
+        android:layout_below="@id/mediumCircleImageView"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/hardCoreCircleImageView"
+    android:layout_width="120dp"
+    android:layout_height="150dp"
+    android:src="@drawable/logo"
+    app:border_color="@color/textColor"
+    android:layout_below="@id/tv_easyTwister"
+    android:layout_alignParentRight="true"
+    app:border_width="3dp"
+    android:layout_marginRight="28dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hardcore Twister"
+        android:fontFamily="serif"
+        android:textColor="@color/textViewColors"
+        android:textSize="13sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/hardCoreCircleImageView"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/txt_vp_item_page"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:text="Page"-->
+        <!--android:textColor="#9b92b3"-->
+        <!--android:textStyle="bold"/>-->
+
+</RelativeLayout>

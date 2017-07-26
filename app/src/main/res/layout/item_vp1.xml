@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+    <TextView
+        android:id="@+id/editProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:textColor="@color/bluebutton"
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+        />
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/boy128"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yela"
+        android:textSize="14sp"
+        android:textColor="@color/textViewColors"
+        android:layout_below="@id/profileImage"
+        android:layout_centerHorizontal="true"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/scoreProfile"
+        android:layout_width="48dp"
+        android:layout_height="32dp"
+        android:src="@drawable/xp128"
+        android:layout_below="@id/userName"
+        app:border_color="@color/bluetransparent"
+        app:border_width="1dp"
+        android:layout_margin="16dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_score_profile"
+        android:text="Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bluebutton"
+        android:layout_below="@id/scoreProfile"
+        android:textSize="18sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="0dp"/>
+
+    <TextView
+        android:id="@+id/textView_profile_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="500XP"
+        android:textStyle="italic"
+        android:layout_toRightOf="@id/scoreProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignTop="@+id/scoreProfile" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/accuracyProfile"
+        android:layout_width="48dp"
+        android:layout_height="32dp"
+        android:src="@drawable/accuracy128"
+        android:layout_below="@id/userName"
+        android:layout_toLeftOf="@+id/textview_accuracyProfile_percentage"
+        app:border_color="@color/bluetransparent"
+        app:border_width="1dp"
+        android:layout_margin="16dp"
+        />
+
+    <TextView
+    android:id="@+id/textview_accuracyProfile"
+    android:text="Accuracy"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/bluebutton"
+    android:layout_toLeftOf="@+id/textview_accuracyProfile_percentage"
+    android:layout_below="@id/accuracyProfile"
+    android:textSize="18sp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="0dp"/>
+
+
+
+    <TextView
+        android:id="@+id/textview_accuracyProfile_percentage"
+        android:textSize="20sp"
+        android:text="100%"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_profile_score"
+        android:layout_margin="16dp"
+        android:layout_alignParentRight="true"/>
+
+    <View
+        android:id="@+id/divider_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color"
+        android:layout_below="@id/textView_score_profile"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/achievementsBoldTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Achievements"
+        android:textSize="18sp"
+        android:textColor="@color/textViewColors"
+        android:textStyle="bold"
+        android:layout_below="@id/divider_horizontal"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/achievementsCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="0/14"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/achievementsBoldTextView"
+        android:textColor="@color/textViewColors"
+        android:layout_below="@id/divider_horizontal"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/view_achievments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="View"
+        android:textColor="@color/bluebutton"
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+        android:onClick="viewAchievementsClicked"
+        android:layout_below="@id/divider_horizontal"
+        android:layout_alignParentRight="true"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/achievement0"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/achievementsBoldTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/xp128"
+        app:border_width="1dp"
+        app:border_color="@color/bluetransparent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/achievement1"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/achievementsBoldTextView"
+        android:layout_toRightOf="@id/achievement0"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/xp128"
+        app:border_width="1dp"
+        app:border_color="@color/bluetransparent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/achievement2"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/achievementsBoldTextView"
+        android:layout_toRightOf="@id/achievement1"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/xp128"
+        app:border_width="1dp"
+        app:border_color="@color/bluetransparent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/achievement3"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/achievementsBoldTextView"
+        android:layout_toRightOf="@id/achievement2"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/xp128"
+        app:border_width="1dp"
+        app:border_color="@color/bluetransparent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/achievement4"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/achievementsBoldTextView"
+        android:layout_toRightOf="@id/achievement3"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/xp128"
+        app:border_width="1dp"
+        app:border_color="@color/bluetransparent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/achievement5"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/achievementsBoldTextView"
+        android:layout_toRightOf="@id/achievement4"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/xp128"
+        app:border_width="1dp"
+        app:border_color="@color/bluetransparent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/achievement6"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/achievementsBoldTextView"
+        android:layout_toRightOf="@id/achievement5"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/xp128"
+        app:border_width="1dp"
+        app:border_color="@color/bluetransparent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/achievement7"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/achievement0"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/xp128"
+        app:border_width="1dp"
+        app:border_color="@color/bluetransparent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/achievement8"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/achievement0"
+        android:layout_toRightOf="@id/achievement7"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/xp128"
+        app:border_width="1dp"
+        app:border_color="@color/bluetransparent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/achievement9"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/achievement0"
+        android:layout_toRightOf="@id/achievement8"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/xp128"
+        app:border_width="1dp"
+        app:border_color="@color/bluetransparent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/achievement10"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/achievement0"
+        android:layout_toRightOf="@id/achievement9"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/xp128"
+        app:border_width="1dp"
+        app:border_color="@color/bluetransparent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/achievement11"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/achievement0"
+        android:layout_toRightOf="@id/achievement10"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/xp128"
+        app:border_width="1dp"
+        app:border_color="@color/bluetransparent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/achievement12"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/achievement0"
+        android:layout_toRightOf="@id/achievement11"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/xp128"
+        app:border_width="1dp"
+        app:border_color="@color/bluetransparent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/achievement13"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/achievement0"
+        android:layout_toRightOf="@id/achievement12"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/xp128"
+        app:border_width="1dp"
+        app:border_color="@color/bluetransparent"/>
+
+    <View
+        android:layout_below="@id/achievement13"
+        android:id="@+id/divdier_after_achievements"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/leaderboard_textViewBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leaderboard"
+        android:textSize="18sp"
+        android:textColor="@color/textViewColors"
+        android:textStyle="bold"
+        android:layout_below="@id/divdier_after_achievements"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/add_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="+"
+        android:textColor="@color/bluebutton"
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+        android:onClick="addLeaderBoardClicked"
+        android:layout_below="@id/divdier_after_achievements"
+        android:layout_alignParentRight="true"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/leaderboard_user_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/leaderboard_textViewBold"
+        android:layout_margin="16dp"
+        android:src="@drawable/male1score128"
+        />
+
+    <TextView
+        android:id="@+id/user_name_leaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daniyar"
+        android:textColor="@color/textViewColors"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/leaderboard_user_image"
+        android:layout_below="@id/leaderboard_textViewBold"
+        android:layout_margin="26dp"
+        />
+
+    <TextView
+        android:id="@+id/score_leaderboard_user1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="560XP"
+        android:textSize="18sp"
+        android:layout_below="@id/add_textview"
+        android:layout_margin="26dp"
+        android:layout_alignParentRight="true" />
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

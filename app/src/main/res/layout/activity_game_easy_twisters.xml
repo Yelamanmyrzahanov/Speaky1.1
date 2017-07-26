@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="kz.djunglestones.speaky.GameEasyTwisters">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/timer"
+        android:layout_width="48dp"
+        android:layout_height="32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        app:border_color="@color/bluetransparent"
+        app:border_width="3dp"
+        android:src="@drawable/stopwatch128"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/textview_timertime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4:00"
+        android:layout_toRightOf="@id/timer"
+        android:layout_marginTop="16dp"
+        android:textSize="25sp"
+
+        />
+
+    <TextView
+        android:id="@+id/timeBelowTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time"
+        android:textSize="20sp"
+        android:textColor="#2D9CDB"
+        android:layout_below="@+id/textview_timertime"
+        android:layout_toLeftOf="@+id/imgTwister"
+        android:layout_toStartOf="@+id/imgTwister" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/score"
+        android:layout_width="48dp"
+        android:layout_height="32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        app:border_color="@color/textColor"
+        app:border_width="3dp"
+        android:src="@drawable/xp128"
+        android:layout_toRightOf="@id/textview_timertime"
+        android:layout_margin="16dp" />
+
+
+        <TextView
+        android:id="@+id/textview_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60xp"
+        android:layout_toRightOf="@id/score"
+        android:layout_marginTop="16dp"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/scoreBelowTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="score"
+        android:textSize="20sp"
+        android:textColor="#2D9CDB"
+        android:layout_below="@+id/textview_score"
+        android:layout_alignLeft="@+id/btn_sound"
+        android:layout_alignStart="@+id/btn_sound" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/accuracy"
+        android:layout_width="48dp"
+        android:layout_height="32dp"
+        android:layout_centerHorizontal="true"
+        app:border_color="@color/textColor"
+        app:border_width="3dp"
+        android:src="@drawable/accuracy128"
+        android:clickable="true"
+        android:layout_toRightOf="@id/textview_score"
+        android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/textview_accuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60%"
+        android:layout_toRightOf="@id/accuracy"
+        android:layout_marginTop="16dp"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/accuracyBelowTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="accuracy"
+        android:textSize="20sp"
+        android:textColor="#2D9CDB"
+        android:layout_below="@+id/textview_accuracy"
+        android:layout_toRightOf="@+id/imgTwister"
+        android:layout_toEndOf="@+id/imgTwister" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="72dp"
+        android:layout_below="@id/score"
+        android:id="@+id/imgTwister"
+        android:layout_width="192dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        app:border_color="@color/bluetransparent"
+        app:border_width="3dp"
+        android:src="@drawable/oyster"/>
+    
+    <TextView
+        android:id="@+id/textview_twister"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/imgTwister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="what noise annoys an oyster"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@color/textViewColors"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textview_twister"
+        android:layout_width="96dp"
+        android:layout_height="80dp"
+        android:id="@+id/mic_button"
+        app:border_color="@color/bluetransparent"
+        app:border_width="3dp"
+        android:src="@drawable/micblue128"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginTop="120dp"/>
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/btn_sound"
+        android:layout_width="48dp"
+        android:layout_height="42dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textview_twister"
+        android:layout_margin="16dp"
+        android:src="@drawable/sound128blue1"
+        android:background="?android:attr/selectableItemBackground"
+        />
+
+    <TextView
+        android:layout_below="@id/mic_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tap_on_mic"
+        android:textColor="@color/textViewColors"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+
+
+
+    <!--<ImageButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@mipmap/back_arrow"-->
+        <!--android:background="?android:attr/selectableItemBackground"/>-->
+
+
+
+
+
+
+
+        <!--/>-->
+
+
+
+
+
+
+
+
+</RelativeLayout>

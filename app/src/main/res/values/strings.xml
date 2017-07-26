@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Speaky1</string>
+    <string name="title_1">Card 1 of 3</string>
+    <string name="text_1">Easy peasy twisters</string>
+    <string name="title_2">Card 2 of 3</string>
+    <string name="text_2">Elementary twisters</string>
+    <string name="title_3">Card 3 of 3</string>
+    <string name="text_3">Beginner twisters</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="tap_on_mic">Tap on mic to speak</string>
+</resources>

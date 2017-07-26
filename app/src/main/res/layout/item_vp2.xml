@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+    <TextView
+        android:id="@+id/train_big_textview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="Train"
+        android:textColor="@color/bluebutton"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:id="@+id/train_easy_rel_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/train_big_textview"
+        android:onClick="easyTrainViewClicked"
+        android:clickable="true"
+        android:layout_margin="16dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/train_easy_monster_circle_view"
+            android:layout_width="96dp"
+            android:layout_height="80dp"
+            android:src="@drawable/monster128"
+            app:border_width="1dp"
+            app:border_color="@color/bluetransparent"
+            />
+
+        <TextView
+            android:id="@+id/boldEasyTwisterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Easy Twisters"
+            android:textStyle="bold"
+            android:textColor="@color/textViewColors"
+            android:layout_toRightOf="@id/train_easy_monster_circle_view"
+            android:layout_marginLeft="16dp"/>
+        
+        <TextView
+            android:id="@+id/textElementaryLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elementary Level"
+            android:textStyle="italic"
+            android:layout_below="@id/boldEasyTwisterText"
+            android:layout_toRightOf="@id/train_easy_monster_circle_view"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/textBeginnerLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beginner Level"
+            android:textStyle="italic"
+            android:layout_below="@id/textElementaryLevel"
+            android:layout_toRightOf="@id/train_easy_monster_circle_view"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/easyCounterEmoji"
+            android:src="@drawable/counter"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_toLeftOf="@+id/easyTrainCounter"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/easyTrainCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:textStyle="italic"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_horizontal_train"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color"
+        android:layout_below="@id/train_easy_rel_layout"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/train_middle_rel_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="middleTrainViewClicked"
+        android:layout_below="@id/divider_horizontal_train"
+        android:clickable="true"
+        android:layout_margin="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/train_middle_monster_circle_view"
+            android:layout_width="96dp"
+            android:layout_height="80dp"
+            android:src="@drawable/womanmouth"
+            app:border_width="1dp"
+            app:border_color="@color/bluetransparent"
+            />
+
+        <TextView
+            android:id="@+id/boldMiddleTwisterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Middle Twisters"
+            android:textStyle="bold"
+            android:textColor="@color/textViewColors"
+            android:layout_toRightOf="@id/train_middle_monster_circle_view"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/textPreIntermediateLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pre-Intermediate Level"
+            android:textStyle="italic"
+            android:layout_below="@id/boldMiddleTwisterText"
+            android:layout_toRightOf="@id/train_middle_monster_circle_view"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/textIntermediateLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beginner Level"
+            android:textStyle="italic"
+            android:layout_below="@id/textPreIntermediateLevel"
+            android:layout_toRightOf="@id/train_middle_monster_circle_view"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/middleCounterEmoji"
+            android:src="@drawable/counter"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_toLeftOf="@+id/middleTrainCounter"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/middleTrainCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:textStyle="italic"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider2_horizontal_train"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color"
+        android:layout_below="@id/train_middle_rel_layout"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/train_hard_rel_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="hardTrainViewClicked"
+        android:layout_below="@id/divider2_horizontal_train"
+        android:clickable="true"
+        android:layout_margin="16dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/train_hard_monster_circle_view"
+            android:layout_width="96dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"
+            app:border_width="1dp"
+            app:border_color="@color/bluetransparent"
+            />
+
+        <TextView
+            android:id="@+id/boldHardTwisterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hardcore Twisters"
+            android:textStyle="bold"
+            android:textColor="@color/textViewColors"
+            android:layout_toRightOf="@id/train_hard_monster_circle_view"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/upper_IntermediateLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pre-Intermediate Level"
+            android:textStyle="italic"
+            android:layout_below="@id/boldHardTwisterText"
+            android:layout_toRightOf="@id/train_hard_monster_circle_view"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/textAdvancedLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Advanced Level"
+            android:textStyle="italic"
+            android:layout_below="@id/upper_IntermediateLevel"
+            android:layout_toRightOf="@id/train_hard_monster_circle_view"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/hardCounterEmoji"
+            android:src="@drawable/counter"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_toLeftOf="@+id/hardTrainCounter"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/hardTrainCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:textStyle="italic"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
